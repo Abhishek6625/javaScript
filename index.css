@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.logo{
+    padding: 1rem;
+}
+
+.active{
+    background: gray !important;
+    color: black !important;
+}
+
+/* .firsth1{
+    text-align: center;
+    margin: 1rem auto;
+} */
+
+@media screen and (max-width: 1000px) {
+    
+    header{
+        flex-direction: column;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+    }
+
+    header nav a{
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Metal+Mania');
+
+body,
+h2 {
+    color: #ff0000;
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+body,
+li {
+    color: #FF9933;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+
+}
+
+body,
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Metal Mania', cursive;
+    background-color: #000;
+}
+
+.text-container h1 {
+    font-size: 60px;
+    color: rgba(225, 225, 225, .1);
+    background-image: url(https://dl.dropbox.com/s/q0307y3qfx57i0u/images.jpeg?);
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-animation: slide 15s linear infinite;
+}
+
+@-webkit-keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -500px 0;
+    }
+}
+
+.text-container {
+    margin-top: 5%;
+    text-align: center;
+
+}
+.img{
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
