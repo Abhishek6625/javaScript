@@ -67,6 +67,7 @@ for (let i = 0; i < allLinks.length; i++) {
     allLinks[i].addEventListener("click", (e) => {
         if (e.target.id == `link${i}`)
             e.target.classList.add("active");
+
     })
 
 }
