@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #cfcfcf;
+    
+}
+.container{
+    width: 960px;
+    
+    /* width: 960px; */
+    margin: auto;
+}
+nav{
+    height: 70px;
+    background-color: #4ab7ff;
+}
+/* nav .navbar{
+    line-height: 50px;
+} */
+.navbar{
+	margin-right:20px;
+    height: 50px;
+    display: inline-block;
+    float: right;
+
+}
+/*This is for panditprogramemr heading*/
+nav > a{
+    color: #fff;
+    padding: 2px 8px;
+
+    line-height: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+
+}
+.navbar ul li a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 5px 8px;
+    margin-right: 10px;
+    transition: ease-in 0.5s;
+
+}
+
+#active,.navbar ul li a:hover{
+    background-color: #02010e;
+    
+
+}
+
+.navbar > ul > li{
+    display: inline-block;
+
+}
+.mainbanner img{
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+
+}
+/* .divservices{
+    width: 100%;
+    height: 340px;
+    margin: auto;
+} */
+.services{
+    width:100%;
+    margin: auto;
+    background-color: #fff;
+}
+.services h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.services .col{
+    width: 300px;
+    margin: 15px 5px;
+    padding: 10px;
+    border-right: 1px solid #cfcfcf;
+    text-align: center;
+    display: inline-block;
+
+    
+}
+.services .col h2{
+    color: #a9a9a9;
+    font-size: 25px;
+    padding: 8px 5px;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+}
+.services .col p{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 2px;
+    margin: 8px;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+}
+.services .col a{
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 2px solid #0000ff;
+    border-radius: 25px;
+    border-style: none;
+    color: #fff;
+    background-color: #4ab7ff;
+    transition: ease-out 0.4s;
+}
+.services .col h3{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.services .col a:hover{
+    background-color: #000000;
+    color: #fff;
+}
+.services .right{
+    border-style: none;
+
+}
+.cussection{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    background-color: #4ab7ff;
+}
+.customeritems{
+    width: 100%;
+    text-align: center;
+}
+.customeritems img{
+    height: 100px;
+    width: 120px;
+    border-radius: 50%;
+
+}
+.customeritems h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin: 15px ;
+    padding: 8px;
+
+}
+.customeritems p{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    margin: 15px ;
+    padding: 8px;
+
+}
+.customeritems a{
+    text-decoration: none;
+    color: #fff;
+    margin: 20px 10px ;
+    padding: 8px 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 2px solid #0000ff;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #000000;
+    transition: ease-out 0.4s;
+
+}
+.customeritems a:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+footer{
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 40px;
+    text-align: center;
+    background-color: #000000;
+}
