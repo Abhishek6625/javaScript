@@ -9,7 +9,7 @@ let input = document.createElement("input");
 
 
 // write text inside tag 
-para1.innerText = "this is paragraph.";
+para1.innerText = "This is paragraph.";
 h1.innerText = "Hello ";
 
 

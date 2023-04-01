@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #ccc;
+    /* background-image: radial-gradient(green  ,skyblue 30% ,yellowgreen); */
+    background-size: cover;
+
+}
+
+.contener {
+    max-width: 900px;
+    margin: auto;
+}
+
+.contener .Apply_box {
+    background-color: white;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba(1, 2, 1, 0.1);
+    border-radius: 10px;
+}
+.header .link1{
+    padding: 8px 15px;
+    text-decoration: none;
+    background: green;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.small {
+    font-size: 20px;
+}
+
+form .form_contener {
+    margin-top: 20px;
+    color: blue;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+}
+.demo1{
+    /* background-color: black; */
+}
+
+label {
+    font-size: 15px;
+}
+
+input,
+select,
+textarea {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    border-radius: 5px;
+   
+}
+
+textarea,input:focus {
+    outline-color: red;
+}
+
+.Buttom_contener {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button {
+    background-color: red;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+.textarea_control {
+    grid-column: 1 / span 2;
+}
+
+.textarea_control textarea {
+    width: 100%;
+    resize: vertical;
+}
+.pass1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+}
+
+@media (max-width: 460px) {
+    .textarea_control {
+        grid-column: 1 / span 1;
+    }
+    .pass1{
+      font-size: 12px;
+    }
+}
