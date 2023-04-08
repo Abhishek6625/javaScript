@@ -1,6 +1,5 @@
 let a =document.querySelector("section h2");
 a.style.backgroundColor="blue";
-console.log(a);
 let h3 =document.createElement("h3");
 let text =document.createTextNode("This is my text")
 let comment =document.createComment("Thia is my comment")

@@ -1,0 +1,132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.heading i {
+    padding: 8px;
+    background: blue;
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+
+}
+
+.nav_item {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.icon_item button {
+    width: 20px;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+}
+
+nav {
+    /* border: 2px solid red; */
+    background-color: rgba(191, 179, 245, 0.17);
+    width: 300px;
+    height: 100vh;
+    padding: 20px 10px;
+    box-shadow: 0px 0px 15px 0px rgba(1, 1, 1, 0.2);
+}
+
+.nav_item .icon_item {
+    /* border: 2px solid black; */
+    margin: 10px 0px;
+    padding: 10px 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    border-radius: 10px;
+    word-spacing: 10px;
+
+}
+
+.nav_item .icon_item:hover {
+    background-color: rgba(0, 0, 255, 0.79);
+    color: white;
+    transition: .5s ease;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.nav_item .search-bar {
+    background-color: rgba(0, 26, 255, 0.252);
+    text-align: center;
+}
+
+.nav_item .search-bar i {
+    font-size: 20px;
+    color: black;
+}
+
+.nav_item .search-bar:hover {
+    background-color: rgba(0, 26, 255, 0.203);
+    color: black;
+}
+
+.icon_item a {
+    width: 250px;
+    /* height: 100vh; */
+    text-decoration: none;
+    color: black;
+    /* border: 2px solid red; */
+    position: absolute;
+    overflow: hidden;
+    outline: none;
+    padding: 0px 20px;
+}
+
+.nav_item a:hover {
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+
+input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+    color: black;
+
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.nav_item .log_out {
+    margin-top: 50px;
+}
+
+b {
+    font-size: 30px;
+    padding: 30px;
+    color: blue;
+}

@@ -1,0 +1,279 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+
+}
+.background{
+   background: url(./pexels-pixabay-208745.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+   width: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 25px 13%;
+    background-color: rgba(81, 0, 255, 0.563);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    background: #fff;
+    bottom: -5px;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.navbar a:hover:after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.search-bar {
+    width: 250px;
+    height: 45px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+
+}
+
+.search-bar input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.search-bar button {
+    width: 40px;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-bar input::placeholder {
+    color: #fff;
+}
+
+.search-bar button i {
+    font-size: 22px;
+}
+
+.contener {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 550px;
+    margin-top: 20px;
+    background: url(./WhatsApp\ Image\ 2023-03-17\ at\ 17.38.40.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.item {
+    position: absolute;
+    top: 0;
+    width: 58%;
+    height: 100%;
+    color: #111;
+    background-color: transparent;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.item .logo {
+    color: #111;
+    font-size: 30px;
+}
+
+.text-item p {
+    font-size: 16px;
+    margin: 20px 0px;
+}
+
+.social-icon a {
+    color: blue;
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+
+}
+
+.social-icon a:hover i {
+    transform: scale(1.2);
+}
+
+.contener .login-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+    color: #111;
+}
+
+.login-section .form-box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-section .form-box h2 {
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.form-box .input-box {
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    padding: 30px 0px;
+    position: relative;
+    margin: 30px 0px;
+}
+
+.form-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 16px 0px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    padding-right: 28px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0px;
+    pointer-events: none;
+    transform: 0.5s ease;
+
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+
+}
+ 
+.rember-password {
+    font-size: 14px;
+    color: #111;
+    font-weight: 500;
+    margin: -15px 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rember-password label .input {
+    width: 20px;
+    accent-color: #111;
+
+}
+
+.rember-password a {
+    color: #111;
+    text-decoration: none;
+
+}
+
+.rember-password a:hover {
+    text-decoration: underline;
+
+}
+
+.btn {
+    background: #fff;
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f72d72;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.4);
+
+}
+
+.create-account {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 25px;
+}
+.create-account p{
+    color: #fff;
+    font-weight: 700;
+}
+
+.create-account p a {
+    color: blue;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.create-account p a:hover {
+    text-decoration: underline;
+}
