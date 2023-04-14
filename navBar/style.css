@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+body {
+    background: #fefefe;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #11101b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    color: #ffff;
+}
+.logo h1{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px 0px;
+}
+
+.hamber {
+    display: none;
+}
+
+.nav_bar ul a {
+    margin: 20px;
+    color: #fff;
+    padding: 8px 10px;
+
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.nav_bar ul a:hover {
+    background: #fff;
+    color: #11101b;
+    transition: .5s ease;
+}
+
+.nav_bar ul .home {
+    background: #fff;
+    color: #11101b;
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0px 50px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0px 20px;
+        font-size: 10px;
+
+    }
+}
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+    .nav_bar ul a{
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .hamber{
+        display: block;
+        cursor: pointer;
+    }
+    .hamber .line{
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0px;
+    }
+    header{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 16px;
+    }
+    .nav_bar{
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        right: 0px;
+        width:100vw;
+        background-color: #11101b;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav_bar.active{
+        height: 450px;
+    }
+    .nav_bar ul a{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px auto 0px auto;
+        transition: 0.5s;
+        margin-bottom: 20px;
+        opacity: 0;
+        color: white;
+    }
+    .nav_bar.active ul a{
+        opacity: 1;
+    }
+}

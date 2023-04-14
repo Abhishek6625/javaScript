@@ -58,7 +58,7 @@
 // h.forEach(function(data){
 //   data.style.backgroundColor= 'green';
 // })
-  
+
 // console.log(h);
 
 // let a=document.querySelector('h1');
@@ -66,3 +66,84 @@
 // let b=a.className ='header';
 // console.log(a);
 // console.log(b);
+
+// let a=document.querySelector('.icon_item').classList;
+// console.log(a[1]);
+// console.log(a.item(1))
+// let a=document.querySelector('nav').classList;
+// a.add("nav_demo",'demo');
+// a.remove('nav_demo','demo')
+
+
+
+
+let icon = document.querySelector('.bx-chevron-right');
+let nav = document.querySelector('.nav-bar');
+let a = document.querySelectorAll('a');
+let input = document.querySelector('input');
+let h1 = document.querySelector('h1');
+let h4 = document.querySelector('h4');
+let i = document.querySelectorAll('i');
+let serchIcon = document.querySelectorAll('i')[1];
+let serchBar = document.querySelector('.search-bar');
+
+
+
+const navgestion = () => {
+
+    if (nav.style.width == "80px") {
+
+        nav.style.width = "300px";
+        nav.style.transition = '.5s';
+        a.forEach(function (data) {
+            data.style.display = 'inline-block';
+        })
+        input.style.display = 'inline-block';
+        h1.style.display = 'block';
+        h4.style.display = 'block';
+        serchIcon.style.display = 'block';
+        // serchBar.style.backgroundColor = 'transparent';
+        serchBar.style.cursor = 'auto';
+        serchBar.style.height = '48px';
+        serchBar.style.padding = '0px';
+
+        i.forEach(function (data) {
+            data.style.fontSize = '25px';
+            data.style.fontWeight = '700';
+            data.style.marginLeft = '10px';
+
+        })
+
+    } else {
+
+        nav.style.width = "80px";
+        nav.style.transition = '.5s';
+        a.forEach(function (data) {
+            data.style.display = 'none';
+        })
+        input.style.display = 'none';
+        h1.style.display = 'none';
+        h4.style.display = 'none';
+        serchIcon.style.display = 'none';
+        // serchBar.style.backgroundColor = 'transparent';
+        serchBar.style.cursor = 'auto';
+        serchBar.style.height = '0vh';
+        serchBar.style.padding = '0px';
+
+        i.forEach(function (data) {
+            data.style.fontSize = '25px';
+            data.style.fontWeight = '700';
+            data.style.marginLeft = '10px';
+
+        })
+
+
+    }
+
+
+
+}
+
+icon.addEventListener('click', navgestion);
+
+

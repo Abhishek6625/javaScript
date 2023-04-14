@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(45deg, #4e65ff, #92effd);
+}
+
+.navtion {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 120px;
+    height: 60px;
+    background: #fff;
+    box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.1);
+    transition: height 0.5s, width 0.5s;
+    transition-delay: 0s, 0.75s;
+    overflow: hidden;
+    border-radius: 8px;
+
+}
+
+.navtion.active {
+    width: 400px;
+    height: 450px;
+    transition: width 0.5s, height 0.5s;
+    transition-delay: 0s, 0.75s;
+    border-radius: 8px;
+}
+
+.navtion .userBar {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    /* background: #f00; */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.navtion.active .userBar {
+    width: calc(100% - 60px);
+    transition-delay: 0s;
+}
+
+.navtion.userBar.userName {
+    white-space: nowrap;
+    color: #000;
+    font-size: 1rem;
+}
+
+.navtion .userBar .imgBx {
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    background: #000;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid #fff;
+}
+
+.navtion .userBar .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navtion .menuToggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    /* background: #f00; */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navtion .menuToggle::before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #111;
+    transform: translateY(-10px);
+    box-shadow: 0 10px #111;
+    transition: 0.5s;
+}
+
+.navtion .menuToggle::after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #111;
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+
+.navtion.active .menuToggle::before {
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 #111;
+}
+
+.navtion.active .menuToggle::after {
+    transform: translateY(0px) rotate(-45deg);
+}
+
+.menu{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 60px);
+    margin-top: 60px;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+.menu li{
+   list-style: none; 
+}
+.menu li a{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    font-size: 18px;
+    gap: 10px;
+    text-decoration: none;
+    color: #111;
+}
+.menu li a:hover{
+    color: #4e65ff;
+}
+.menu li a ion-icon{
+    font-size: 25px;
+    font-weight: 700;
+}

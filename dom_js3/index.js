@@ -1,16 +1,16 @@
-let a =document.querySelector("section h2");
-a.style.backgroundColor="blue";
-let h3 =document.createElement("h3");
-let text =document.createTextNode("This is my text")
-let comment =document.createComment("Thia is my comment")
+// let a =document.querySelector("section h2");
+// a.style.backgroundColor="blue";
+// let h3 =document.createElement("h3");
+// let text =document.createTextNode("This is my text")
+// let comment =document.createComment("Thia is my comment")
 
 // console.log(box);
-box.forEach((columns) =>{
+// box.forEach((columns) =>{
   
-    let box =document.querySelector(".box_one");
-    console.log(columns)
-    box.appendChild(h3)
-})
+//     let box =document.querySelector(".box_one");
+//     console.log(columns)
+//     box.appendChild(h3)
+// })
 
 // console.log(h3);
 // console.log(text);
@@ -18,3 +18,10 @@ box.forEach((columns) =>{
 
 // h3.appendChild(text);
 // box.appendChild(h3)
+
+
+// let a =document.querySelector(".box")
+// const change =()=>{
+//     a.style.backgrownColor='red';
+// }
+
