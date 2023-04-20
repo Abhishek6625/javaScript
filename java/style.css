@@ -40,7 +40,23 @@ header{
 }
 a:hover{
     color: black;
-    background-color: red;
+    background-color: white;
     transition: .4s ease;
 
+}
+
+.mode{
+    text-align: center;
+    margin-top: 60px;
+
+}
+.mode button{
+    font-size: 25px;
+    margin: 40px;
+    border: none;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
 }

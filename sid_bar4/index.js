@@ -97,19 +97,22 @@ const navgestion = () => {
         nav.style.transition = '.5s';
         a.forEach(function (data) {
             data.style.display = 'inline-block';
+            data.style.padding='0px 20px'
+            data.style.overflow='hidden'
         })
         input.style.display = 'inline-block';
         h1.style.display = 'block';
         h4.style.display = 'block';
         serchIcon.style.display = 'block';
+        serchIcon.style.marginLeft='20px'
         // serchBar.style.backgroundColor = 'transparent';
         serchBar.style.cursor = 'auto';
         serchBar.style.height = '48px';
         serchBar.style.padding = '0px';
+        serchBar.style.outLine = 'none';
 
         i.forEach(function (data) {
-            data.style.fontSize = '25px';
-            data.style.fontWeight = '700';
+            data.style.fontSize = '20px';
             data.style.marginLeft = '10px';
 
         })
@@ -128,7 +131,8 @@ const navgestion = () => {
         // serchBar.style.backgroundColor = 'transparent';
         serchBar.style.cursor = 'auto';
         serchBar.style.height = '0vh';
-        serchBar.style.padding = '0px';
+        serchBar.style.padding = '0px'; 
+        serchBar.style.textAlign = 'center'; 
 
         i.forEach(function (data) {
             data.style.fontSize = '25px';
